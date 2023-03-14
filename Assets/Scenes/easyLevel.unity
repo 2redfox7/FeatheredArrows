@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07052275, g: 0.35373604, b: 0.97078824, a: 1}
+  m_IndirectSpecularColor: {r: 0.29684302, g: 0.6337671, b: 0.9937157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16544,6 +16544,7 @@ GameObject:
   - component: {fileID: 2814531341233490705}
   - component: {fileID: 2814531341233490704}
   - component: {fileID: 3516938532771610926}
+  - component: {fileID: 3516938532771610927}
   m_Layer: 0
   m_Name: BowArrow
   m_TagString: Untagged
@@ -16905,6 +16906,21 @@ MonoBehaviour:
   TrailRenderer: {fileID: 2814531341334392299}
   HitSound: {fileID: 307153695}
   EnemySound: {fileID: 307153695}
+--- !u!114 &3516938532771610927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156548927169487096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115ce82abbc5f9740ad08c18157d54b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rigidbody: {fileID: 2814531341233490705}
+  VelocityMult: 1
+  AngularVelocityMult: 0.1
 --- !u!1 &3577263869531194096
 GameObject:
   m_ObjectHideFlags: 0
