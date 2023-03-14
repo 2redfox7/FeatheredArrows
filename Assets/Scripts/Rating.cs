@@ -20,7 +20,7 @@ public class Rating : MonoBehaviour
     private void Update()
     {
         highscore = (int)score;
-        ScoreText.text = "Очки: " + highscore.ToString();
+        ScoreText.text = "РћС‡РєРё: " + highscore.ToString();
         ResultScoreText.text = "" + highscore.ToString();
         if (Timer.GameIsEnd)
         {
@@ -52,12 +52,12 @@ public class Rating : MonoBehaviour
         }
         if (newRecord)
         {
-            HighscoreText.text = "Новый рекорд!";
+            HighscoreText.text = "РќРѕРІС‹Р№ СЂРµРєРѕСЂРґ!";
             newRecord = false;
         }
         else
         {
-            HighscoreText.text = "Ваш рекорд: " + PlayerPrefs.GetInt(a).ToString();
+            HighscoreText.text = "Р’Р°С€ СЂРµРєРѕСЂРґ: " + PlayerPrefs.GetInt(a).ToString();
         }
     }
 }

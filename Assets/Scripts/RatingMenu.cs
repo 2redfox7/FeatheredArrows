@@ -12,8 +12,8 @@ public class RatingMenu : MonoBehaviour
     [SerializeField] TextMeshProUGUI BonusLevelText;
     void Update()
     {
-        EasyLevelText.text = "������ ������� - " + PlayerPrefs.GetInt("EasyScore").ToString();
-        MediumLevelText.text = "������� ������� - " + PlayerPrefs.GetInt("MediumScore").ToString();
-        HardLevelText.text = "������� ������� - " + PlayerPrefs.GetInt("HardScore").ToString();
+        EasyLevelText.text = "Легкий уровень - " + PlayerPrefs.GetInt("EasyScore").ToString();
+        MediumLevelText.text = "Средний уровень - " + PlayerPrefs.GetInt("MediumScore").ToString();
+        HardLevelText.text = "Сложный уровень - " + PlayerPrefs.GetInt("HardScore").ToString();
     }
 }
