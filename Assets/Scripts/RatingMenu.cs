@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,8 +12,8 @@ public class RatingMenu : MonoBehaviour
     [SerializeField] TextMeshProUGUI BonusLevelText;
     void Update()
     {
-        EasyLevelText.text = "Легкий уровень - " + PlayerPrefs.GetInt("EasyScore").ToString();
-        MediumLevelText.text = "Средний уровень - " + PlayerPrefs.GetInt("MediumScore").ToString();
-        HardLevelText.text = "Сложный уровень - " + PlayerPrefs.GetInt("HardScore").ToString();
+        EasyLevelText.text = "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - " + PlayerPrefs.GetInt("EasyScore").ToString();
+        MediumLevelText.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - " + PlayerPrefs.GetInt("MediumScore").ToString();
+        HardLevelText.text = "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ - " + PlayerPrefs.GetInt("HardScore").ToString();
     }
 }
