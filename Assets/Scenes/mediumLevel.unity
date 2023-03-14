@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 102442638}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 118426647}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -861,14 +861,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118426642}
-  m_LocalRotation: {x: -0.59095186, y: -0.46334013, z: -0.3998862, w: 0.52553105}
-  m_LocalPosition: {x: -69.635, y: 20.26, z: 17.461}
+  m_LocalRotation: {x: -1.3877788e-17, y: -0.7150154, z: 1.3877788e-17, w: 0.6991088}
+  m_LocalPosition: {x: -68.839, y: 19.54, z: 17.379}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1560549735}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: -82.61, y: 186.416, z: -261.836}
+  m_LocalEulerAnglesHint: {x: 0, y: -91.289, z: 0}
 --- !u!23 &118426644
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 132330057}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1179,7 +1179,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809336043}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1629,7 +1629,7 @@ GameObject:
   - component: {fileID: 168956461}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,7 +1827,7 @@ GameObject:
   - component: {fileID: 180177527}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1942,7 +1942,7 @@ GameObject:
   - component: {fileID: 194712806}
   m_Layer: 0
   m_Name: PP_Grass_15 (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2299,7 +2299,7 @@ GameObject:
   - component: {fileID: 251494039}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,7 +2413,7 @@ GameObject:
   - component: {fileID: 260372321}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 40
@@ -2674,7 +2674,7 @@ GameObject:
   - component: {fileID: 312768068}
   m_Layer: 0
   m_Name: RightSideFence
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2743,7 +2743,7 @@ GameObject:
   - component: {fileID: 340616309}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3318,7 +3318,7 @@ GameObject:
   - component: {fileID: 476488185}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3434,7 +3434,7 @@ GameObject:
   - component: {fileID: 489548170}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3633,7 +3633,7 @@ GameObject:
   - component: {fileID: 510527859}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3748,7 +3748,7 @@ GameObject:
   - component: {fileID: 540880998}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3946,7 +3946,7 @@ GameObject:
   - component: {fileID: 547555741}
   m_Layer: 0
   m_Name: PP_Birch_Tree_06 (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4042,7 +4042,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -4061,7 +4061,7 @@ GameObject:
   - component: {fileID: 551159943}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4230,6 +4230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Mushroom_Fantasy_Purple_05
       objectReference: {fileID: 0}
+    - target: {fileID: 7749838506462483410, guid: d354c41a99993964baca0254487708d1, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d354c41a99993964baca0254487708d1, type: 3}
 --- !u!1 &574623106
@@ -4247,7 +4251,7 @@ GameObject:
   - component: {fileID: 574623111}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4409,7 +4413,7 @@ GameObject:
   - component: {fileID: 619478348}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4608,7 +4612,7 @@ GameObject:
   - component: {fileID: 641274054}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4807,7 +4811,7 @@ GameObject:
   - component: {fileID: 657059923}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4919,7 +4923,7 @@ GameObject:
   - component: {fileID: 680105754}
   m_Layer: 0
   m_Name: LeftSideFence
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4987,7 +4991,7 @@ GameObject:
   - component: {fileID: 681322153}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5087,6 +5091,89 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
+--- !u!1 &694624996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694625000}
+  - component: {fileID: 694624999}
+  - component: {fileID: 694624998}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &694624998
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694624996}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &694624999
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694624996}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &694625000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694624996}
+  m_LocalRotation: {x: -0.0025740596, y: -0.71385545, z: 0.00033881664, w: 0.7002883}
+  m_LocalPosition: {x: -2081.1355, y: 334.66507, z: -846.9135}
+  m_LocalScale: {x: 93.51084, y: 93.51084, z: 93.51084}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1809336043}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,7 +5466,7 @@ RectTransform:
   m_Children:
   - {fileID: 1459744011}
   m_Father: {fileID: 1809336043}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5438,7 +5525,7 @@ GameObject:
   - component: {fileID: 740191475}
   m_Layer: 0
   m_Name: PP_Grass_15 (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5748,7 +5835,7 @@ GameObject:
   - component: {fileID: 759530306}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5863,7 +5950,7 @@ GameObject:
   - component: {fileID: 765181102}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5979,7 +6066,7 @@ GameObject:
   - component: {fileID: 773063432}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6230,6 +6317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Mushroom_Fantasy_Purple_08
       objectReference: {fileID: 0}
+    - target: {fileID: 3318689441606926373, guid: d3ee913ed32937344b0587e70dc777a2, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3ee913ed32937344b0587e70dc777a2, type: 3}
 --- !u!1 &813695649
@@ -6329,7 +6420,7 @@ GameObject:
   - component: {fileID: 814449565}
   m_Layer: 0
   m_Name: PP_Grass_11 (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7008,7 +7099,7 @@ GameObject:
   - component: {fileID: 896753250}
   m_Layer: 0
   m_Name: PP_Grass_15 (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7190,7 +7281,7 @@ GameObject:
   - component: {fileID: 924783388}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7202,14 +7293,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924783383}
-  m_LocalRotation: {x: -0.97291607, y: -0.000973491, z: 0.047401633, w: -0.22624445}
-  m_LocalPosition: {x: -58.56035, y: 19.1797, z: 6.8422832}
+  m_LocalRotation: {x: -0.963253, y: -0.039165787, z: 0.05792014, w: -0.25933546}
+  m_LocalPosition: {x: -58.548, y: 19.282, z: 6.806}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1560549735}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: -206.125, y: -2.9370117, z: 1.2480011}
+  m_LocalEulerAnglesHint: {x: -210.275, y: 6.0659943, z: -3.0140076}
 --- !u!23 &924783385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7634,11 +7725,10 @@ GameObject:
   - component: {fileID: 959363552}
   - component: {fileID: 959363551}
   - component: {fileID: 959363553}
-  - component: {fileID: 959363554}
   - component: {fileID: 959363555}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7720,20 +7810,6 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -906752527014980686, guid: 4b28505f3ef9d1c428ae2120a364a1c8, type: 3}
---- !u!64 &959363554
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 959363549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -906752527014980686, guid: 4b28505f3ef9d1c428ae2120a364a1c8, type: 3}
 --- !u!54 &959363555
@@ -7889,6 +7965,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f02038262097dc4fbcf4c9f7060b895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimColliderLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  debugTransform: {fileID: 694625000}
   orientation: {fileID: 963194228}
 --- !u!1 &963411804
 GameObject:
@@ -8288,7 +8368,7 @@ GameObject:
   - component: {fileID: 991287704}
   m_Layer: 0
   m_Name: LowPoly - Grass B (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8622,7 +8702,7 @@ GameObject:
   - component: {fileID: 1080975361}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8738,7 +8818,7 @@ GameObject:
   - component: {fileID: 1098658615}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8937,7 +9017,7 @@ GameObject:
   - component: {fileID: 1116039600}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9251,7 +9331,7 @@ GameObject:
   - component: {fileID: 1136612488}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9751,7 +9831,7 @@ GameObject:
   - component: {fileID: 1171090758}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10199,7 +10279,7 @@ GameObject:
   - component: {fileID: 1201520884}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10314,7 +10394,7 @@ GameObject:
   - component: {fileID: 1206123567}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10563,7 +10643,7 @@ GameObject:
   - component: {fileID: 1247541449}
   m_Layer: 0
   m_Name: LowPoly - Grass B (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10773,7 +10853,7 @@ GameObject:
   - component: {fileID: 1269118406}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11870,7 +11950,7 @@ GameObject:
   - component: {fileID: 1349083015}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12002,7 +12082,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809336043}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12259,7 +12339,7 @@ RectTransform:
   m_Children:
   - {fileID: 1809916527}
   m_Father: {fileID: 1809336043}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12780,7 +12860,7 @@ GameObject:
   - component: {fileID: 1445452501}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12895,7 +12975,7 @@ GameObject:
   - component: {fileID: 1459180925}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12907,14 +12987,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459180920}
-  m_LocalRotation: {x: -0.0034086662, y: 0.28034616, z: -0.011670295, w: 0.959822}
-  m_LocalPosition: {x: -66.1352, y: 19.134068, z: 5.9361}
+  m_LocalRotation: {x: 0.6940434, y: 0.21156025, z: -0.22589009, w: 0.6500152}
+  m_LocalPosition: {x: -66.119, y: 19.111, z: 5.715}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1560549735}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.393}
+  m_LocalEulerAnglesHint: {x: 93.752014, y: 36.057007, z: 0}
 --- !u!23 &1459180922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13090,7 +13170,7 @@ GameObject:
   - component: {fileID: 1493735811}
   m_Layer: 0
   m_Name: PP_Grass_11 (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13470,38 +13550,6 @@ Transform:
   m_Father: {fileID: 1280223280}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1564965011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1564965012}
-  m_Layer: 0
-  m_Name: ArrowObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1564965012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564965011}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1000, y: -1000, z: -1000}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2343420102929791554}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1574897196
 GameObject:
   m_ObjectHideFlags: 0
@@ -13515,7 +13563,7 @@ GameObject:
   - component: {fileID: 1574897198}
   m_Layer: 0
   m_Name: LowPoly - Grass B (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13944,7 +13992,7 @@ GameObject:
   - component: {fileID: 1674784321}
   m_Layer: 0
   m_Name: BrokenFence
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13982,7 +14030,7 @@ GameObject:
   - component: {fileID: 1675247506}
   m_Layer: 0
   m_Name: PP_Birch_Tree_06 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14078,7 +14126,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -14097,7 +14145,7 @@ GameObject:
   - component: {fileID: 1680076403}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14110,7 +14158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680076398}
   m_LocalRotation: {x: -0.9292844, y: 0.027818447, z: 0.071550876, w: 0.36129922}
-  m_LocalPosition: {x: -57.845776, y: 20.0593, z: 7.833578}
+  m_LocalPosition: {x: -57.823, y: 19.936, z: 7.979}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -14587,7 +14635,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809336043}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15012,7 +15060,7 @@ GameObject:
   - component: {fileID: 1752701402}
   m_Layer: 0
   m_Name: PP_Meadow_Path_05 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 40
@@ -15127,7 +15175,7 @@ GameObject:
   - component: {fileID: 1772755400}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15406,6 +15454,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1428629485}
+  - {fileID: 694625000}
   - {fileID: 150443622}
   - {fileID: 1355176139}
   - {fileID: 1697218073}
@@ -15546,7 +15595,7 @@ GameObject:
   - component: {fileID: 1820474259}
   m_Layer: 0
   m_Name: PP_Forest_Mountain_Moss_01 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15642,7 +15691,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -15661,7 +15710,7 @@ GameObject:
   - component: {fileID: 1844183376}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15943,7 +15992,7 @@ GameObject:
   - component: {fileID: 1861065949}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15955,14 +16004,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861065944}
-  m_LocalRotation: {x: -0.022208525, y: 0.27948588, z: -0.07603542, w: 0.95687675}
-  m_LocalPosition: {x: -66.04924, y: 19.853668, z: 5.881201}
+  m_LocalRotation: {x: -0.6734757, y: 0.14766903, z: 0.13994205, w: 0.7106621}
+  m_LocalPosition: {x: -65.90991, y: 19.655256, z: 5.9322276}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1560549735}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9.087}
+  m_LocalEulerAnglesHint: {x: -86.922, y: 23.477, z: 0}
 --- !u!23 &1861065946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16268,7 +16317,7 @@ GameObject:
   - component: {fileID: 1889519873}
   m_Layer: 0
   m_Name: LowPoly - Rock A (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16534,7 +16583,7 @@ GameObject:
   - component: {fileID: 1908169569}
   m_Layer: 0
   m_Name: PP_Grass_15 (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16716,7 +16765,7 @@ GameObject:
   - component: {fileID: 1916127095}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16729,7 +16778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916127090}
   m_LocalRotation: {x: 0.006854443, y: -0.40435737, z: -0.028293543, w: 0.9141377}
-  m_LocalPosition: {x: -65.92789, y: 19.513077, z: 16.364367}
+  m_LocalPosition: {x: -65.937, y: 19.514, z: 16.354}
   m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -17059,7 +17108,7 @@ GameObject:
   - component: {fileID: 1941895518}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17468,7 +17517,7 @@ GameObject:
   - component: {fileID: 1967752530}
   m_Layer: 0
   m_Name: PP_Grass_11 (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18064,7 +18113,7 @@ GameObject:
   - component: {fileID: 2021242868}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18579,7 +18628,7 @@ GameObject:
   - component: {fileID: 2104656529}
   m_Layer: 0
   m_Name: Target
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18996,7 +19045,7 @@ GameObject:
   - component: {fileID: 23855685829158117}
   m_Layer: 0
   m_Name: LowPoly - Rock B
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19015,7 +19064,7 @@ GameObject:
   - component: {fileID: 33887622807637704}
   m_Layer: 0
   m_Name: LowPoly - Rock B
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19034,7 +19083,7 @@ GameObject:
   - component: {fileID: 33092967472171726}
   m_Layer: 0
   m_Name: LowPoly - Rock A
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19053,7 +19102,7 @@ GameObject:
   - component: {fileID: 33092967507813690}
   m_Layer: 0
   m_Name: LowPoly - Rock A (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19071,7 +19120,7 @@ GameObject:
   - component: {fileID: 23445742933723390}
   m_Layer: 0
   m_Name: LowPoly - Rock A (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19089,7 +19138,7 @@ GameObject:
   - component: {fileID: 23445743043720767}
   m_Layer: 0
   m_Name: LowPoly - Rock A
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19108,7 +19157,7 @@ GameObject:
   - component: {fileID: 33092966170558365}
   m_Layer: 0
   m_Name: LowPoly - Rock A (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19879,7 +19928,7 @@ GameObject:
   - component: {fileID: 4421108171204343797}
   m_Layer: 0
   m_Name: PP_Tree_10
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20167,7 +20216,7 @@ GameObject:
   - component: {fileID: 3954408052995163943}
   m_Layer: 0
   m_Name: PP_Birch_Tree_06
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20339,20 +20388,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   ReturnTime: 0.2
+  arrowSpeed: 35
   CurrentArrow: {fileID: 3516938532771610926}
   BowTension: {fileID: 1958157070}
   ArrowWhistling: {fileID: 1433552935}
-  r: {x: 0, y: 0, z: 0}
-  v: {x: 0, y: 0, z: 0}
-  g: {x: 0, y: -9.81, z: 0}
-  wind: {x: 0, y: 0, z: 0}
-  v0: 40
-  fi: 0
-  windx: 0
-  windy: 0
-  windz: 0
-  h: 0
-  vmax: 30
 --- !u!33 &955033259941582831
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20390,7 +20429,7 @@ GameObject:
   - component: {fileID: 3730752802890581476}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20459,7 +20498,7 @@ GameObject:
   - component: {fileID: 1439904338735242209}
   m_Layer: 0
   m_Name: PP_Grass_11
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20645,7 +20684,7 @@ GameObject:
   - component: {fileID: 1508880643533256933}
   m_Layer: 0
   m_Name: LowPoly - FirTree B
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 64
@@ -20662,7 +20701,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -20809,7 +20848,7 @@ GameObject:
   - component: {fileID: 1942383419555447749}
   m_Layer: 0
   m_Name: LowPoly - FirTree A (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20934,7 +20973,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -20966,7 +21005,7 @@ GameObject:
   - component: {fileID: 2087962808644547630}
   m_Layer: 0
   m_Name: PP_Grass_11
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21000,7 +21039,7 @@ GameObject:
   - component: {fileID: 2153661620726891673}
   m_Layer: 0
   m_Name: LowPoly - FirTree B (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 64
@@ -21068,7 +21107,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -21087,7 +21126,7 @@ GameObject:
   - component: {fileID: 2561785939395115318}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21120,7 +21159,7 @@ GameObject:
   - component: {fileID: 2304540295513962113}
   m_Layer: 0
   m_Name: PP_Grass_15 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21167,7 +21206,7 @@ GameObject:
   - component: {fileID: 2304540295877014854}
   m_Layer: 0
   m_Name: PP_Grass_15
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21188,13 +21227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3156548927169487096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2792, y: -1000, z: -1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2814531341334392298}
-  m_Father: {fileID: 1564965012}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2470915096910027220
 Transform:
@@ -21514,7 +21553,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -21664,7 +21703,7 @@ GameObject:
   - component: {fileID: 2954823824610722671}
   m_Layer: 0
   m_Name: PP_Hyacinth_04
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21739,6 +21778,7 @@ GameObject:
   - component: {fileID: 2814531341233490705}
   - component: {fileID: 2814531341233490704}
   - component: {fileID: 3516938532771610926}
+  - component: {fileID: 3516938532771610927}
   m_Layer: 0
   m_Name: BowArrow
   m_TagString: Untagged
@@ -21802,7 +21842,7 @@ GameObject:
   - component: {fileID: 3318689441995505826}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_08
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21883,10 +21923,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57c3f0afabba8348bba3c4cf0bc5dee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rigidbody: {fileID: 2814531341233490705}
+  aimColliderLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  arrowSpeed: 35
   TrailRenderer: {fileID: 2814531341334392299}
   HitSound: {fileID: 166668302}
-  EnemySound: {fileID: 0}
+  EnemySound: {fileID: 166668302}
+--- !u!114 &3516938532771610927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156548927169487096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115ce82abbc5f9740ad08c18157d54b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rigidbody: {fileID: 2814531341233490705}
+  VelocityMult: 1
+  AngularVelocityMult: 0.1
 --- !u!1 &3577263869531194096
 GameObject:
   m_ObjectHideFlags: 0
@@ -21902,7 +21960,7 @@ GameObject:
   - component: {fileID: 4246663713732384843}
   m_Layer: 0
   m_Name: PP_Meadow_Path_05
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21918,7 +21976,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2298263045900952535, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
 --- !u!23 &3603258950753395387
@@ -22192,7 +22250,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -22225,7 +22283,7 @@ GameObject:
   - component: {fileID: 4376657133328270983}
   m_Layer: 0
   m_Name: PP_Tree_02
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22272,7 +22330,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -22303,7 +22361,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -22335,7 +22393,7 @@ GameObject:
   - component: {fileID: 4400482160902792108}
   m_Layer: 0
   m_Name: PP_Sunflower_04
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22360,7 +22418,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -22393,7 +22451,7 @@ GameObject:
   - component: {fileID: 4459049439841005390}
   m_Layer: 0
   m_Name: PP_Birch_Tree_05 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22410,7 +22468,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -22445,7 +22503,7 @@ GameObject:
   - component: {fileID: 4500668922254025646}
   m_Layer: 0
   m_Name: PP_Rock_Moss_Grown_11 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22509,7 +22567,7 @@ GameObject:
   - component: {fileID: 4500668922435079279}
   m_Layer: 0
   m_Name: PP_Rock_Moss_Grown_11
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22620,7 +22678,7 @@ GameObject:
   - component: {fileID: 5252027966257164167}
   m_Layer: 0
   m_Name: LowPoly - Grass B
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22790,7 +22848,7 @@ GameObject:
   - component: {fileID: 8162557442328299652}
   m_Layer: 0
   m_Name: PP_Forest_Mountain_Moss_01
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22838,7 +22896,7 @@ GameObject:
   - component: {fileID: 8249741357251327457}
   m_Layer: 0
   m_Name: PP_Tree_02 (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22911,7 +22969,7 @@ GameObject:
   - component: {fileID: 7980383515521823574}
   m_Layer: 0
   m_Name: PP_Tree_02
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23073,7 +23131,7 @@ GameObject:
   - component: {fileID: 7681196404460484111}
   m_Layer: 0
   m_Name: PP_Forest_Mountain_Moss_02
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23355,7 +23413,7 @@ GameObject:
   - component: {fileID: 7306392573528040922}
   m_Layer: 0
   m_Name: PP_Grass_11 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23375,7 +23433,7 @@ GameObject:
   - component: {fileID: 9113012290830351202}
   m_Layer: 0
   m_Name: PP_Tree_10 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23770,7 +23828,7 @@ GameObject:
   - component: {fileID: 7749838505986578923}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_05
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23817,7 +23875,7 @@ GameObject:
   - component: {fileID: 7749838506047637372}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_05 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23921,7 +23979,7 @@ GameObject:
   - component: {fileID: 8578475645835423479}
   m_Layer: 0
   m_Name: PP_Tree_02 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23968,7 +24026,7 @@ GameObject:
   - component: {fileID: 7860571911792913440}
   m_Layer: 0
   m_Name: PP_Grass_15 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24023,7 +24081,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24139,7 +24197,7 @@ GameObject:
   - component: {fileID: 8123141273312570156}
   m_Layer: 0
   m_Name: PP_Daffodil_03 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24172,7 +24230,7 @@ GameObject:
   - component: {fileID: 8123141274781757857}
   m_Layer: 0
   m_Name: PP_Daffodil_03
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24230,7 +24288,7 @@ GameObject:
   - component: {fileID: 8721580540630106200}
   m_Layer: 0
   m_Name: PP_Rock_Moss_Grown_11
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24255,7 +24313,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24468,7 +24526,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24531,7 +24589,7 @@ GameObject:
   - component: {fileID: 8704213119637463802}
   m_Layer: 0
   m_Name: PP_Birch_Tree_05
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24548,7 +24606,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24663,7 +24721,7 @@ GameObject:
   - component: {fileID: 8823510566327323051}
   m_Layer: 0
   m_Name: LowPoly - FirTree A
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24680,7 +24738,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24742,7 +24800,7 @@ GameObject:
   - component: {fileID: 8954726918007609466}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Orange_10
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24761,7 +24819,7 @@ GameObject:
   - component: {fileID: 8954726919617892076}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Orange_10 (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24876,7 +24934,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
@@ -24894,7 +24952,7 @@ GameObject:
   - component: {fileID: 9162278361977629633}
   m_Layer: 0
   m_Name: PP_Grass_15 (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

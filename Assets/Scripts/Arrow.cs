@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
-    public Rigidbody Rigidbody;
+    [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
+    [SerializeField] float arrowSpeed;
+
+    private Rigidbody arrowRigidbody;
 
     public TrailRenderer TrailRenderer;
 
@@ -14,16 +17,28 @@ public class Arrow : MonoBehaviour
 
     private bool isActivate = true;
 
-    public void OnCollisionEnter(Collision collision)
+    Vector3 mouseWorldPosition = Vector3.zero;
+
+    private void Awake()
+    {
+        arrowRigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
     {
         if (!isActivate) return;
-        if (collision.gameObject.name == "Target")
+        if (collision.gameObject.tag == "Target")
         {
             HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
             HitSound.Play();
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
-            transform.parent.position = new(0, 0, 0);
+            arrowRigidbody.transform.position = new(0, 0, 0);
             Rating.score += 100;
 
         }
@@ -33,34 +48,46 @@ public class Arrow : MonoBehaviour
             EnemySound.Play();
             Destroy(collision.gameObject);
             TrailRenderer.enabled = false;
-            transform.parent.position = new(0, 0, 0);
+            arrowRigidbody.transform.position = new(0, 0, 0);
             Rating.score += 500;
         }
         if (collision.gameObject.tag == "Environment")
         {
+            arrowRigidbody.isKinematic = true;
+            TrailRenderer.enabled = false;
             BowRope.fly = false;
         }
+        arrowRigidbody.isKinematic = true;
         BowRope.fly = false;
         isActivate = false;
     }
+
     public void SetToRope(Transform ropeTransform)
     {
-        isActivate = true;
-        transform.parent.parent = null;
-        transform.parent.parent = ropeTransform;
-        transform.parent.localPosition = Vector3.zero;
-        transform.parent.localRotation = Quaternion.identity;
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.identity;
+            isActivate = true;
+            transform.parent = null;
+            transform.parent = ropeTransform;
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
 
-        Rigidbody.isKinematic = true;
-        TrailRenderer.enabled = false;
+            arrowRigidbody.isKinematic = true;
+            TrailRenderer.enabled = false;
     }
-    public void Shot()
+    public void Shot(float velocity)
     {
-        transform.parent.parent = null;
-        TrailRenderer.Clear();
-        TrailRenderer.enabled = true;
+            Vector3 mouseWorldPosition = Vector3.zero;
+            Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
+            Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
+            if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderLayerMask))
+            {
+                mouseWorldPosition = raycastHit.point;
+            }
+            Vector3 aimDirection = (mouseWorldPosition - transform.position).normalized;
+            transform.parent = null;
+            arrowRigidbody.velocity = transform.forward * velocity;
+            arrowRigidbody.rotation = Quaternion.LookRotation(aimDirection, Vector3.up);
+            arrowRigidbody.isKinematic = false;
+            TrailRenderer.Clear();
+            TrailRenderer.enabled = true;
     }
-
 }
