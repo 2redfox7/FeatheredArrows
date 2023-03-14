@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.07052275, g: 0.35373604, b: 0.97078824, a: 1}
+  m_IndirectSpecularColor: {r: 0.29445365, g: 0.6292301, b: 0.98704785, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22283,7 +22283,7 @@ MonoBehaviour:
   aimColliderLayerMask:
     serializedVersion: 2
     m_Bits: 1
-  arrowSpeed: 100
+  arrowSpeed: 50
   TrailRenderer: {fileID: 2814531341334392299}
   HitSound: {fileID: 166668302}
   EnemySound: {fileID: 2041280068}
