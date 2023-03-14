@@ -22135,6 +22135,7 @@ GameObject:
   - component: {fileID: 3516938532771610925}
   - component: {fileID: 2814531341233490705}
   - component: {fileID: 2814531341233490704}
+  - component: {fileID: 3516938532771610927}
   - component: {fileID: 3516938532771610926}
   m_Layer: 0
   m_Name: BowArrow
@@ -22287,6 +22288,21 @@ MonoBehaviour:
   TrailRenderer: {fileID: 2814531341334392299}
   HitSound: {fileID: 166668302}
   EnemySound: {fileID: 2041280068}
+--- !u!114 &3516938532771610927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156548927169487096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115ce82abbc5f9740ad08c18157d54b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rigidbody: {fileID: 2814531341233490705}
+  VelocityMult: 1
+  AngularVelocityMult: 0.1
 --- !u!1 &3577263869531194096
 GameObject:
   m_ObjectHideFlags: 0
