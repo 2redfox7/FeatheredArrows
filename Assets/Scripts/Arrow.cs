@@ -10,10 +10,10 @@ public class Arrow : MonoBehaviour
 
     private Rigidbody arrowRigidbody;
 
-    public TrailRenderer trailRenderer;
+    public TrailRenderer TrailRenderer;
 
-    public AudioSource hitSound;
-    public AudioSource enemySound;
+    public AudioSource HitSound;
+    public AudioSource EnemySound;
 
     private bool isActivate = true;
 
@@ -34,27 +34,27 @@ public class Arrow : MonoBehaviour
         if (!isActivate) return;
         if (collision.gameObject.tag == "Target")
         {
-            hitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
-            hitSound.Play();
+            HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
+            HitSound.Play();
             collision.gameObject.SetActive(false);
-            trailRenderer.enabled = false;
+            TrailRenderer.enabled = false;
             arrowRigidbody.transform.position = new(0, 0, 0);
             Rating.score += 100;
 
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            hitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
-            enemySound.Play();
+            HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
+            EnemySound.Play();
             Destroy(collision.gameObject);
-            trailRenderer.enabled = false;
+            TrailRenderer.enabled = false;
             arrowRigidbody.transform.position = new(0, 0, 0);
             Rating.score += 500;
         }
         if (collision.gameObject.tag == "Environment")
         {
             arrowRigidbody.isKinematic = true;
-            trailRenderer.enabled = false;
+            TrailRenderer.enabled = false;
             BowRope.fly = false;
         }
         arrowRigidbody.isKinematic = true;
@@ -71,7 +71,7 @@ public class Arrow : MonoBehaviour
             transform.localRotation = Quaternion.identity;
 
             arrowRigidbody.isKinematic = true;
-            trailRenderer.enabled = false;
+            TrailRenderer.enabled = false;
     }
     public void Shot(float velocity)
     {
@@ -87,7 +87,7 @@ public class Arrow : MonoBehaviour
             arrowRigidbody.velocity = transform.forward * velocity;
             arrowRigidbody.rotation = Quaternion.LookRotation(aimDirection, Vector3.up);
             arrowRigidbody.isKinematic = false;
-            trailRenderer.Clear();
-            trailRenderer.enabled = true;
+            TrailRenderer.Clear();
+            TrailRenderer.enabled = true;
     }
 }

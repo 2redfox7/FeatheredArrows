@@ -16569,9 +16569,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   arrowSpeed: 35
-  trailRenderer: {fileID: 0}
-  hitSound: {fileID: 0}
-  enemySound: {fileID: 0}
+  TrailRenderer: {fileID: 2814531341334392299}
+  HitSound: {fileID: 307153695}
+  EnemySound: {fileID: 307153695}
 --- !u!114 &3516938532771610927
 MonoBehaviour:
   m_ObjectHideFlags: 0
