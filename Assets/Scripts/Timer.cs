@@ -10,11 +10,15 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI TimerText;
     [SerializeField] TextMeshProUGUI ScoreText;
     [SerializeField] TextMeshProUGUI StartTimerText;
+
     public AudioSource LetsGo;
+
     public static bool GameIsStart = true;
     public static bool GameIsEnd = false;
+
     public GameObject resultMenuUI;
     public GameObject bow;
+
     public static float timeLeft = 30;
     public static float timeStart = 3;
     void Update()

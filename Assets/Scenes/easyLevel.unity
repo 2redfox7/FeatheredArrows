@@ -1591,7 +1591,6 @@ GameObject:
   - component: {fileID: 194712805}
   - component: {fileID: 194712808}
   - component: {fileID: 194712807}
-  - component: {fileID: 194712806}
   m_Layer: 0
   m_Name: PP_Grass_15 (11)
   m_TagString: Untagged
@@ -1614,20 +1613,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &194712806
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194712804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!23 &194712807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3294,7 +3279,6 @@ GameObject:
   - component: {fileID: 540880994}
   - component: {fileID: 540880997}
   - component: {fileID: 540880996}
-  - component: {fileID: 540880995}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05 (1)
   m_TagString: Untagged
@@ -3317,20 +3301,6 @@ Transform:
   m_Father: {fileID: 752551002}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &540880995
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540880993}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7011766824195413768, guid: b0ba9b7cecd675b45894beca57389899, type: 3}
 --- !u!23 &540880996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3392,8 +3362,6 @@ GameObject:
   - component: {fileID: 547555737}
   - component: {fileID: 547555740}
   - component: {fileID: 547555739}
-  - component: {fileID: 547555738}
-  - component: {fileID: 547555741}
   m_Layer: 0
   m_Name: PP_Birch_Tree_06 (2)
   m_TagString: Untagged
@@ -3416,20 +3384,6 @@ Transform:
   m_Father: {fileID: 577888018}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &547555738
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547555736}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3015167987163436581, guid: ddd36401006c8654eae1d9a6bcd6380d, type: 3}
 --- !u!23 &547555739
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3480,22 +3434,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547555736}
   m_Mesh: {fileID: 3015167987163436581, guid: ddd36401006c8654eae1d9a6bcd6380d, type: 3}
---- !u!54 &547555741
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547555736}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 1
 --- !u!1001 &557855858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3563,7 +3501,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Mushroom_Fantasy_Purple_05
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7749838506462483411, guid: d354c41a99993964baca0254487708d1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d354c41a99993964baca0254487708d1, type: 3}
 --- !u!1 &577888017
 GameObject:
@@ -4559,7 +4498,6 @@ GameObject:
   - component: {fileID: 740191474}
   - component: {fileID: 740191477}
   - component: {fileID: 740191476}
-  - component: {fileID: 740191475}
   m_Layer: 0
   m_Name: PP_Grass_15 (4)
   m_TagString: Untagged
@@ -4582,20 +4520,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &740191475
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740191473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!23 &740191476
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4841,7 +4765,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Mushroom_Fantasy_Purple_08
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3318689441606926374, guid: d3ee913ed32937344b0587e70dc777a2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d3ee913ed32937344b0587e70dc777a2, type: 3}
 --- !u!1 &813695649
 GameObject:
@@ -4937,7 +4862,6 @@ GameObject:
   - component: {fileID: 814449564}
   - component: {fileID: 814449567}
   - component: {fileID: 814449566}
-  - component: {fileID: 814449565}
   m_Layer: 0
   m_Name: PP_Grass_11 (5)
   m_TagString: Untagged
@@ -4960,20 +4884,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &814449565
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814449563}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!23 &814449566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5450,7 +5360,6 @@ GameObject:
   - component: {fileID: 896753249}
   - component: {fileID: 896753252}
   - component: {fileID: 896753251}
-  - component: {fileID: 896753250}
   m_Layer: 0
   m_Name: PP_Grass_15 (7)
   m_TagString: Untagged
@@ -5473,20 +5382,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &896753250
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896753248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!23 &896753251
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6680,7 +6575,6 @@ GameObject:
   - component: {fileID: 1134488378}
   - component: {fileID: 1134488381}
   - component: {fileID: 1134488380}
-  - component: {fileID: 1134488379}
   m_Layer: 0
   m_Name: PP_Grass_15 (3)
   m_TagString: Untagged
@@ -6703,20 +6597,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1134488379
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134488377}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!23 &1134488380
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9005,7 +8885,6 @@ GameObject:
   - component: {fileID: 1493735810}
   - component: {fileID: 1493735813}
   - component: {fileID: 1493735812}
-  - component: {fileID: 1493735811}
   m_Layer: 0
   m_Name: PP_Grass_11 (4)
   m_TagString: Untagged
@@ -9028,20 +8907,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1493735811
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493735809}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!23 &1493735812
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9719,8 +9584,6 @@ GameObject:
   - component: {fileID: 1675247502}
   - component: {fileID: 1675247505}
   - component: {fileID: 1675247504}
-  - component: {fileID: 1675247503}
-  - component: {fileID: 1675247506}
   m_Layer: 0
   m_Name: PP_Birch_Tree_06 (1)
   m_TagString: Untagged
@@ -9743,20 +9606,6 @@ Transform:
   m_Father: {fileID: 577888018}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1675247503
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675247501}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3015167987163436581, guid: ddd36401006c8654eae1d9a6bcd6380d, type: 3}
 --- !u!23 &1675247504
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9807,22 +9656,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675247501}
   m_Mesh: {fileID: 3015167987163436581, guid: ddd36401006c8654eae1d9a6bcd6380d, type: 3}
---- !u!54 &1675247506
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675247501}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 1
 --- !u!1 &1702409706
 GameObject:
   m_ObjectHideFlags: 0
@@ -10005,8 +9838,6 @@ GameObject:
   - component: {fileID: 1752701398}
   - component: {fileID: 1752701401}
   - component: {fileID: 1752701400}
-  - component: {fileID: 1752701399}
-  - component: {fileID: 1752701402}
   m_Layer: 0
   m_Name: PP_Meadow_Path_05 (1)
   m_TagString: Untagged
@@ -10029,20 +9860,6 @@ Transform:
   m_Father: {fileID: 2066017930}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.45, y: 180, z: 0}
---- !u!64 &1752701399
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752701397}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2298263045900952535, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
 --- !u!23 &1752701400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10093,22 +9910,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752701397}
   m_Mesh: {fileID: 2298263045900952535, guid: 324d33f3ad1481c4e8ba55d696fe64d9, type: 3}
---- !u!54 &1752701402
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752701397}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 1
 --- !u!1 &1754613205
 GameObject:
   m_ObjectHideFlags: 0
@@ -10511,7 +10312,6 @@ GameObject:
   - component: {fileID: 1820474255}
   - component: {fileID: 1820474258}
   - component: {fileID: 1820474257}
-  - component: {fileID: 1820474256}
   m_Layer: 0
   m_Name: PP_Forest_Mountain_Moss_01 (1)
   m_TagString: Untagged
@@ -10534,20 +10334,6 @@ Transform:
   m_Father: {fileID: 752551002}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 134.768, z: 0}
---- !u!64 &1820474256
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820474254}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4890176300591525589, guid: d818648c1b009ab48a03dbcc4ae09583, type: 3}
 --- !u!23 &1820474257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11254,7 +11040,6 @@ GameObject:
   - component: {fileID: 1908169568}
   - component: {fileID: 1908169571}
   - component: {fileID: 1908169570}
-  - component: {fileID: 1908169569}
   m_Layer: 0
   m_Name: PP_Grass_15 (10)
   m_TagString: Untagged
@@ -11277,20 +11062,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1908169569
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908169567}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!23 &1908169570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11926,7 +11697,6 @@ GameObject:
   - component: {fileID: 1967752529}
   - component: {fileID: 1967752532}
   - component: {fileID: 1967752531}
-  - component: {fileID: 1967752530}
   m_Layer: 0
   m_Name: PP_Grass_11 (2)
   m_TagString: Untagged
@@ -11949,20 +11719,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1967752530
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967752528}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!23 &1967752531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14788,20 +14544,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1090505329217196283
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090505329217196284}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7011766824195413768, guid: b0ba9b7cecd675b45894beca57389899, type: 3}
 --- !u!1 &1090505329217196284
 GameObject:
   m_ObjectHideFlags: 0
@@ -14813,7 +14555,6 @@ GameObject:
   - component: {fileID: 317944116041812550}
   - component: {fileID: 3730752802890581475}
   - component: {fileID: 1450929431840747817}
-  - component: {fileID: 1090505329217196283}
   m_Layer: 0
   m_Name: PP_Rock_Pile_Forest_Moss_05
   m_TagString: Untagged
@@ -14954,7 +14695,6 @@ GameObject:
   - component: {fileID: 1778994357872607578}
   - component: {fileID: 3395602398891527935}
   - component: {fileID: 647231014895368757}
-  - component: {fileID: 1439904338735242209}
   m_Layer: 0
   m_Name: PP_Grass_11
   m_TagString: Untagged
@@ -14962,20 +14702,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1439904338735242209
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439904338735242208}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!4 &1450881632733197968
 Transform:
   m_ObjectHideFlags: 0
@@ -15763,20 +15489,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!64 &2087962808644547630
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087962808644547631}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!1 &2087962808644547631
 GameObject:
   m_ObjectHideFlags: 0
@@ -15788,7 +15500,6 @@ GameObject:
   - component: {fileID: 1707497234742668949}
   - component: {fileID: 2314256633078964528}
   - component: {fileID: 574511784725288442}
-  - component: {fileID: 2087962808644547630}
   m_Layer: 0
   m_Name: PP_Grass_11
   m_TagString: Untagged
@@ -15847,20 +15558,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7011766824195413768, guid: b0ba9b7cecd675b45894beca57389899, type: 3}
---- !u!64 &2304540295877014854
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2304540295877014855}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!1 &2304540295877014855
 GameObject:
   m_ObjectHideFlags: 0
@@ -15872,7 +15569,6 @@ GameObject:
   - component: {fileID: 1490849380878708733}
   - component: {fileID: 2530833916305989720}
   - component: {fileID: 359060092139410578}
-  - component: {fileID: 2304540295877014854}
   m_Layer: 0
   m_Name: PP_Grass_15
   m_TagString: Untagged
@@ -16466,7 +16162,6 @@ GameObject:
   - component: {fileID: 2470915096910027220}
   - component: {fileID: 1577860368396965489}
   - component: {fileID: 3603258950753395387}
-  - component: {fileID: 2954823824610722671}
   m_Layer: 0
   m_Name: PP_Hyacinth_04
   m_TagString: Untagged
@@ -16474,20 +16169,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &2954823824610722671
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2954823824610722670}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1803037753767285088, guid: 46d171de72518e343891c4b4c03e5103, type: 3}
 --- !u!23 &3072584116216046373
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16605,7 +16286,6 @@ GameObject:
   - component: {fileID: 2685705422899976731}
   - component: {fileID: 1362991236998501822}
   - component: {fileID: 3823175682332352884}
-  - component: {fileID: 3318689441995505826}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_08
   m_TagString: Untagged
@@ -16613,20 +16293,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &3318689441995505826
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3318689441995505825}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7580556513892443023, guid: 6aac2ae04e9a93646918391471e1a564, type: 3}
 --- !u!33 &3395602398891527935
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16903,9 +16569,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   arrowSpeed: 35
-  TrailRenderer: {fileID: 2814531341334392299}
-  HitSound: {fileID: 307153695}
-  EnemySound: {fileID: 307153695}
+  trailRenderer: {fileID: 0}
+  hitSound: {fileID: 0}
+  enemySound: {fileID: 0}
 --- !u!114 &3516938532771610927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17665,20 +17331,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 1
---- !u!64 &4400482160902792108
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4400482160902792109}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6364478861242937035, guid: 5374e258aa8b0a54b9ad017e47f849ec, type: 3}
 --- !u!1 &4400482160902792109
 GameObject:
   m_ObjectHideFlags: 0
@@ -17690,7 +17342,6 @@ GameObject:
   - component: {fileID: 3916574326907582743}
   - component: {fileID: 141208131772528306}
   - component: {fileID: 2743074003708166776}
-  - component: {fileID: 4400482160902792108}
   m_Layer: 0
   m_Name: PP_Sunflower_04
   m_TagString: Untagged
@@ -17863,20 +17514,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1806810134458854372, guid: 7ed75b99c26237b4d844c1581c5da1b2, type: 3}
---- !u!64 &4500668922435079265
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4500668922435079278}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1806810134458854372, guid: 7ed75b99c26237b4d844c1581c5da1b2, type: 3}
 --- !u!1 &4500668922435079278
 GameObject:
   m_ObjectHideFlags: 0
@@ -17888,7 +17525,6 @@ GameObject:
   - component: {fileID: 3836581064001869524}
   - component: {fileID: 185102455210334577}
   - component: {fileID: 2699181174253530555}
-  - component: {fileID: 4500668922435079265}
   m_Layer: 0
   m_Name: PP_Rock_Moss_Grown_11
   m_TagString: Untagged
@@ -18779,20 +18415,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7306392573528040922
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7306392573528040923}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7387926931826281997, guid: b50dd34feb8fa1b4fa5aa0a7d2271066, type: 3}
 --- !u!1 &7306392573528040923
 GameObject:
   m_ObjectHideFlags: 0
@@ -18804,7 +18426,6 @@ GameObject:
   - component: {fileID: 7939377721908445025}
   - component: {fileID: 6449592737792504004}
   - component: {fileID: 9107819023799632910}
-  - component: {fileID: 7306392573528040922}
   m_Layer: 0
   m_Name: PP_Grass_11 (1)
   m_TagString: Untagged
@@ -19310,7 +18931,6 @@ GameObject:
   - component: {fileID: 6973583930373505872}
   - component: {fileID: 6298563588156427509}
   - component: {fileID: 8109867473162401855}
-  - component: {fileID: 7749838505986578923}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_05
   m_TagString: Untagged
@@ -19318,34 +18938,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &7749838505986578923
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7749838505986578922}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1105425855394590978, guid: 7259cce9d7302d44a8f8bf53cb1bc376, type: 3}
---- !u!64 &7749838506047637372
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7749838506047637373}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1105425855394590978, guid: 7259cce9d7302d44a8f8bf53cb1bc376, type: 3}
 --- !u!1 &7749838506047637373
 GameObject:
   m_ObjectHideFlags: 0
@@ -19357,7 +18949,6 @@ GameObject:
   - component: {fileID: 6973583930170367431}
   - component: {fileID: 6298563588086977122}
   - component: {fileID: 8109867472824477352}
-  - component: {fileID: 7749838506047637372}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Purple_05 (1)
   m_TagString: Untagged
@@ -19483,20 +19074,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2249462234500842342, guid: c6b568bf9e55de141add501b8cd2a0e9, type: 3}
---- !u!64 &7860571911792913440
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7860571911792913441}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!1 &7860571911792913441
 GameObject:
   m_ObjectHideFlags: 0
@@ -19508,7 +19085,6 @@ GameObject:
   - component: {fileID: 7376205890399254171}
   - component: {fileID: 5904878510990375230}
   - component: {fileID: 8509165505116622324}
-  - component: {fileID: 7860571911792913440}
   m_Layer: 0
   m_Name: PP_Grass_15 (1)
   m_TagString: Untagged
@@ -19639,20 +19215,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8123141273312570156
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8123141273312570159}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5902438668197411763, guid: 4e40842238bcca046a7c50ffff32b019, type: 3}
 --- !u!1 &8123141273312570159
 GameObject:
   m_ObjectHideFlags: 0
@@ -19664,7 +19226,6 @@ GameObject:
   - component: {fileID: 8930885862211482005}
   - component: {fileID: 5503181913032195632}
   - component: {fileID: 7763024345742674682}
-  - component: {fileID: 8123141273312570156}
   m_Layer: 0
   m_Name: PP_Daffodil_03 (1)
   m_TagString: Untagged
@@ -19672,20 +19233,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &8123141274781757857
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8123141274781757858}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5902438668197411763, guid: 4e40842238bcca046a7c50ffff32b019, type: 3}
 --- !u!1 &8123141274781757858
 GameObject:
   m_ObjectHideFlags: 0
@@ -19697,7 +19244,6 @@ GameObject:
   - component: {fileID: 8930885863057812248}
   - component: {fileID: 5503181911663666365}
   - component: {fileID: 7763024346452430967}
-  - component: {fileID: 8123141274781757857}
   m_Layer: 0
   m_Name: PP_Daffodil_03
   m_TagString: Untagged
@@ -20438,20 +19984,6 @@ Transform:
   m_Father: {fileID: 1118663602}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &8954726918007609466
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954726918007609469}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5362160847727887206, guid: 769bcb364254fc84f86c3bde2b625a9f, type: 3}
 --- !u!1 &8954726918007609469
 GameObject:
   m_ObjectHideFlags: 0
@@ -20463,7 +19995,6 @@ GameObject:
   - component: {fileID: 8578869229565543111}
   - component: {fileID: 4657178903872769378}
   - component: {fileID: 7441469133794277800}
-  - component: {fileID: 8954726918007609466}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Orange_10
   m_TagString: Untagged
@@ -20482,7 +20013,6 @@ GameObject:
   - component: {fileID: 8578869231175832657}
   - component: {fileID: 4657178903336229876}
   - component: {fileID: 7441469134331473726}
-  - component: {fileID: 8954726919617892076}
   m_Layer: 0
   m_Name: PP_Mushroom_Fantasy_Orange_10 (1)
   m_TagString: Untagged
@@ -20490,20 +20020,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &8954726919617892076
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8954726919617892075}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5362160847727887206, guid: 769bcb364254fc84f86c3bde2b625a9f, type: 3}
 --- !u!64 &9000144760940161724
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20587,7 +20103,6 @@ GameObject:
   - component: {fileID: 8389400218534998394}
   - component: {fileID: 4882738284290375391}
   - component: {fileID: 7216472840751745557}
-  - component: {fileID: 9162278361977629633}
   m_Layer: 0
   m_Name: PP_Grass_15 (2)
   m_TagString: Untagged
@@ -20595,20 +20110,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &9162278361977629633
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9162278361977629632}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6859858418456897516, guid: ac41480a091ee2446a41d386b366ae44, type: 3}
 --- !u!1 &9211820504628034258
 GameObject:
   m_ObjectHideFlags: 0
