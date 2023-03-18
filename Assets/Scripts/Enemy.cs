@@ -13,13 +13,18 @@ public class Enemy : MonoBehaviour
     private int spawnerIndex = 0;
     private int currentIndex = 0;
 
+    private bool outlineActivation = true;
     float time = 0;
     private bool spawnerActivation;
     public float flyingSpeed;
     private bool isFlying;
     private void Awake()
     {
-        var outline = eagle.AddComponent<Outline>();
+        if (eagle.GetComponent<Outline>() == null)
+        {
+            eagle.AddComponent<Outline>();
+        }
+        var outline = eagle.GetComponent<Outline>();
 
         outline.OutlineMode = Outline.Mode.OutlineVisible;
         outline.OutlineColor = Color.yellow;
@@ -38,6 +43,17 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         time += Time.deltaTime;
+
+        if (Pause.GameIsPaused && currentEagle)
+        {
+            currentEagle.GetComponent<Outline>().OutlineWidth = 0f;
+            outlineActivation = false;
+        }
+        else if (!outlineActivation && !Pause.GameIsPaused && !Timer.GameIsStart && currentEagle)
+        {
+            currentEagle.GetComponent<Outline>().OutlineWidth = 5f;
+            outlineActivation = true;
+        }
         if (!Timer.GameIsStart && Mathf.Round(time) >= 10)
         {
             
@@ -57,6 +73,7 @@ public class Enemy : MonoBehaviour
                 currentSpawner.SetActive(true);
                 currentEagle = Instantiate(eagle, currentSpawner.transform.position, currentSpawner.transform.rotation);
             }
+            
             if (currentSpawner)
             {
                 isFlying = true;
@@ -71,7 +88,9 @@ public class Enemy : MonoBehaviour
             {
                 spawnerActivation = false;
                 currentSpawner.SetActive(false);
+
                 Destroy(currentEagle.gameObject);
+                
                 isFlying = false;
             }
         }
