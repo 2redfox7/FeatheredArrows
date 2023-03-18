@@ -17,6 +17,14 @@ public class Enemy : MonoBehaviour
     private bool spawnerActivation;
     public float flyingSpeed;
     private bool isFlying;
+    private void Awake()
+    {
+        var outline = eagle.AddComponent<Outline>();
+
+        outline.OutlineMode = Outline.Mode.OutlineVisible;
+        outline.OutlineColor = Color.yellow;
+        outline.OutlineWidth = 5f;
+    }
     private void Start()
     {
         otherSpawners = eagleSpawners;

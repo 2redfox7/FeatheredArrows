@@ -14,6 +14,16 @@ public class targetAppearance : MonoBehaviour
     private int currentIndex = 0;
     public static bool targetActivation;
 
+    private bool outlineActivation = true;
+
+    private void Awake()
+    {
+        var outline = gameObject.AddComponent<Outline>();
+
+        outline.OutlineMode = Outline.Mode.OutlineVisible;
+        outline.OutlineColor = Color.yellow;
+        outline.OutlineWidth = 5f;
+    }
     private void Start()
     {
         otherTargets = targetsPool;
@@ -26,6 +36,16 @@ public class targetAppearance : MonoBehaviour
 
     void Update()
     {
+        if (Pause.GameIsPaused)
+        {
+            gameObject.GetComponent<Outline>().OutlineWidth = 0f;
+            outlineActivation = false;
+        }
+        else if (!outlineActivation && !Pause.GameIsPaused && !Timer.GameIsStart)
+        {
+            gameObject.GetComponent<Outline>().OutlineWidth = 5f;
+            outlineActivation = true;
+        }
         if (!targetActivation || !currentTarget.activeInHierarchy)
         {
             while (targetIndex == currentIndex) 
