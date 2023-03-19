@@ -22,7 +22,7 @@ public class targetAppearance : MonoBehaviour
 
         outline.OutlineMode = Outline.Mode.OutlineVisible;
         outline.OutlineColor = Color.yellow;
-        outline.OutlineWidth = 5f;
+        outline.OutlineWidth = 4f;
     }
     private void Start()
     {
@@ -43,7 +43,7 @@ public class targetAppearance : MonoBehaviour
         }
         else if (!outlineActivation && !Pause.GameIsPaused && !Timer.GameIsStart)
         {
-            gameObject.GetComponent<Outline>().OutlineWidth = 5f;
+            gameObject.GetComponent<Outline>().OutlineWidth = 4f;
             outlineActivation = true;
         }
         if (!targetActivation || !currentTarget.activeInHierarchy)

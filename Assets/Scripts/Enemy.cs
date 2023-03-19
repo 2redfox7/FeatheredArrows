@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     private bool spawnerActivation;
     public float flyingSpeed;
     private bool isFlying;
+
     private void Awake()
     {
         if (eagle.GetComponent<Outline>() == null)
@@ -43,7 +44,6 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         time += Time.deltaTime;
-
         if (Pause.GameIsPaused && currentEagle)
         {
             currentEagle.GetComponent<Outline>().OutlineWidth = 0f;
