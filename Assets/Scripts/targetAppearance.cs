@@ -36,7 +36,7 @@ public class targetAppearance : MonoBehaviour
 
     void Update()
     {
-        if (Pause.GameIsPaused)
+        if (Pause.GameIsPaused || Timer.GameIsEnd)
         {
             gameObject.GetComponent<Outline>().OutlineWidth = 0f;
             outlineActivation = false;
