@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class BowRopeMP : MonoBehaviour /*NetworkBehaviour*/
+public class BowRopeMP : MonoBehaviour
 {
     public float Tension;
     private bool _pressed;
@@ -44,6 +44,10 @@ public class BowRopeMP : MonoBehaviour /*NetworkBehaviour*/
             curArrow.SetToRope(RopeTransform);
             BowTension.pitch = UnityEngine.Random.Range(0.8f, 1.2f);
             BowTension.Play();
+        }
+        if (Input.GetMouseButton(0))
+        {
+            curArrow.SetToRope(RopeTransform);
         }
         if (Input.GetMouseButtonUp(0))
         {

@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
@@ -14,19 +14,18 @@ public class multiplayerPlayer : NetworkBehaviour
 
     public static float sensitivity = 2f;
 
-    public Transform orientation;
-    public override void OnStartAuthority()
+    //public Transform orientation;
+    /*public override void OnStartAuthority()
     {
         playerCamera.gameObject.SetActive(true);
-    }
+    }*/
     void Start()
     {
         if (!isLocalPlayer)
         {
             playerCamera.gameObject.SetActive(false);
         }
-        Cursor.lockState = CursorLockMode.Locked;
-        
+        //Cursor.lockState = CursorLockMode.Locked;  
     }
 
     void Update()
@@ -48,6 +47,4 @@ public class multiplayerPlayer : NetworkBehaviour
         rotationY = Mathf.Clamp(rotationY, -90f, 90f);
         transform.localEulerAngles = new Vector3(rotationX, 90 + rotationY, 0);
     }
-    
-    
 }

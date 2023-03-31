@@ -30,7 +30,7 @@ public class ArrowMP : MonoBehaviour
         if (collision.gameObject.tag == "Target")
         {
             HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
-            HitSound.Play();
+            HitSound.Play(); 
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
             arrowRigidbody.transform.position = new(0, 0, 0);

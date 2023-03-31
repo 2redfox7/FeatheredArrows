@@ -31,7 +31,6 @@ public class PauseMP : NetworkBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
         bow.SetActive(true);
-        Time.timeScale = 1.0f;
         Player.sensitivity = 2f;
         GameIsPaused = false;
     }
@@ -41,7 +40,6 @@ public class PauseMP : NetworkBehaviour
         BackgroundMusic.Pause();
         Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
         bow.SetActive(false);
         Player.sensitivity = 0f;
         GameIsPaused = true;
@@ -52,8 +50,7 @@ public class PauseMP : NetworkBehaviour
         TimerMP.GameIsStart = true;
         RatingMP.score = 0;
         GameIsPaused = false;
-        Player.sensitivity = 2f;
-        Time.timeScale = 1.0f;
+        Player.sensitivity = 2f;;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -63,7 +60,6 @@ public class PauseMP : NetworkBehaviour
         TimerMP.GameIsStart = true;
         RatingMP.score = 0;
         Player.sensitivity = 2f;
-        Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
 

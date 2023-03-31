@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/hardMultiplayerLevel.unity
     guid: d755e93202ff5f1438ccd68f3a37b81a
+  - enabled: 0
+    path: Assets/Mirror/Examples/Basic/Scenes/Example.unity
+    guid: b30904751905d3f4dacde62ac85ec7c2
   m_configObjects: {}

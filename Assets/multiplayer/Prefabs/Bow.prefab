@@ -296,7 +296,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   ReturnTime: 0.2
   arrowSpeed: 35
-  CurrentArrow: {fileID: 0}
+  CurrentArrow: {fileID: 2601135934249680071, guid: 0f5d7dcba5f6ba142a0ef2e8a72e8c15, type: 3}
   BowTension: {fileID: 1541619199272442239}
   ArrowWhistling: {fileID: 1985664105753613387}
 --- !u!1 &6891924877108177417
