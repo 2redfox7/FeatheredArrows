@@ -11,8 +11,9 @@ public class targetAppearanceMP : NetworkBehaviour
     private GameObject[] otherTargets;
     private GameObject currentTarget;
 
-    private int targetIndex = 0;
+    [SyncVar] private int targetIndex = 0;
     private int currentIndex = 0;
+    
     public static bool targetActivation;
 
     private bool outlineActivation = true;
@@ -27,10 +28,9 @@ public class targetAppearanceMP : NetworkBehaviour
     }
     private void Start()
     {
-
         otherTargets = targetsPool;
         currentTarget = targetsPool[targetIndex];
-        targetIndexGenerator(targetsPool);
+        targetIndexGenerator(otherTargets);
         currentTarget.SetActive(true);
         targetActivation = true;
         currentIndex = targetIndex;
@@ -50,9 +50,14 @@ public class targetAppearanceMP : NetworkBehaviour
         }
         if (!targetActivation || !currentTarget.activeInHierarchy)
         {
-            while (targetIndex == currentIndex) 
+
+            while (targetIndex == currentIndex)
             {
-                targetIndexGenerator(otherTargets);
+
+                    targetIndexGenerator(otherTargets);   
+
+                    CmdTargetIndexGenerator(otherTargets);
+
                 targetActivation = true;
             }
             currentIndex = targetIndex;
@@ -72,10 +77,15 @@ public class targetAppearanceMP : NetworkBehaviour
         }
 
     }
-    private int targetIndexGenerator(GameObject[] targetsPool)
+    [Server]
+    public void targetIndexGenerator(GameObject[] targetsPool)
     {
         targetIndex = Random.Range(0, targetsPool.Length);
-        return targetIndex;
+    }
+    [Command] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
+    public void CmdTargetIndexGenerator(GameObject[] targetsPool)
+    {
+        targetIndexGenerator(targetsPool);
     }
     private GameObject[] RemoveAt(GameObject[] array, int index)
     {

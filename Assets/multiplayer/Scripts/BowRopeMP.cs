@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class BowRopeMP : MonoBehaviour
+public class BowRopeMP : NetworkBehaviour
 {
     public float Tension;
     private bool _pressed;
@@ -30,15 +30,18 @@ public class BowRopeMP : MonoBehaviour
     void Start()
     {
         RopeNearLocalPosition = RopeTransform.localPosition;
-        
-
     }
 
     void Update()
     {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             curArrow = Instantiate(CurrentArrow);
+            NetworkServer.Spawn(curArrow.gameObject);
             _pressed = true;
 
             curArrow.SetToRope(RopeTransform);

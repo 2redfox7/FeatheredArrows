@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
-public class ArrowMP : MonoBehaviour
+public class ArrowMP : NetworkBehaviour
 {
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
     [SerializeField] float arrowSpeed;
@@ -34,7 +34,7 @@ public class ArrowMP : MonoBehaviour
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
             arrowRigidbody.transform.position = new(0, 0, 0);
-            Rating.score += 100;
+            RatingMP.score += 100;
 
         }
         if (collision.gameObject.tag == "Enemy")
@@ -44,19 +44,18 @@ public class ArrowMP : MonoBehaviour
             Destroy(collision.gameObject);
             TrailRenderer.enabled = false;
             arrowRigidbody.transform.position = new(0, 0, 0);
-            Rating.score += 500;
+            RatingMP.score += 500;
         }
         if (collision.gameObject.tag == "Environment")
         {
             arrowRigidbody.isKinematic = true;
             TrailRenderer.enabled = false;
-            BowRope.fly = false;
+            BowRopeMP.fly = false;
         }
         arrowRigidbody.isKinematic = true;
-        BowRope.fly = false;
+        BowRopeMP.fly = false;
         isActivate = false;
     }
-
     public void SetToRope(Transform ropeTransform)
     {
         isActivate = true;
