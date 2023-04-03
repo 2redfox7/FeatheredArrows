@@ -13,6 +13,12 @@ public class PauseMP : NetworkBehaviour
     public GameObject bow;
 
     public AudioSource BackgroundMusic;
+    private RatingMP scoringSystem;
+
+    private void Start()
+    {
+        scoringSystem = FindObjectOfType<RatingMP>();
+    }
 
     void Update()
     {
@@ -48,7 +54,8 @@ public class PauseMP : NetworkBehaviour
     {
         TimerMP.timeStart = 3;
         TimerMP.GameIsStart = true;
-        RatingMP.score = 0;
+        scoringSystem.player1Score = 0;
+        scoringSystem.player2Score = 0;
         GameIsPaused = false;
         Player.sensitivity = 2f;;
         SceneManager.LoadScene("MainMenu");
@@ -58,7 +65,8 @@ public class PauseMP : NetworkBehaviour
     {
         TimerMP.timeStart = 3;
         TimerMP.GameIsStart = true;
-        RatingMP.score = 0;
+        scoringSystem.player1Score = 0;
+        scoringSystem.player2Score = 0;
         Player.sensitivity = 2f;
         SceneManager.LoadScene("MainMenu");
     }
@@ -71,6 +79,7 @@ public class PauseMP : NetworkBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         bow.SetActive(true);
         Time.timeScale = 1.0f;
-        RatingMP.score = 0;
+        scoringSystem.player1Score = 0;
+        scoringSystem.player2Score = 0;
     }
 }

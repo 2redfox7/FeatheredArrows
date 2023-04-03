@@ -9,7 +9,8 @@ using Mirror;
 public class TimerMP : NetworkBehaviour
 {
     [SerializeField] TextMeshProUGUI TimerText;
-    [SerializeField] TextMeshProUGUI ScoreText;
+    [SerializeField] TextMeshProUGUI player1ScoreText;
+    [SerializeField] TextMeshProUGUI player2ScoreText;
     [SerializeField] TextMeshProUGUI StartTimerText;
 
     public AudioSource LetsGo;
@@ -50,7 +51,8 @@ public class TimerMP : NetworkBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         TimerText.GameObject().SetActive(false);
-        ScoreText.GameObject().SetActive(false);
+        player1ScoreText.GameObject().SetActive(false);
+        player2ScoreText.GameObject().SetActive(false);
         resultMenuUI.SetActive(true);
         GameIsEnd = true;
         Time.timeScale = 0f;
@@ -69,7 +71,8 @@ public class TimerMP : NetworkBehaviour
             timeLeft = 30;
         }
         StartTimerText.GameObject().SetActive(false);
-        ScoreText.GameObject().SetActive(true);
+        player1ScoreText.GameObject().SetActive(true);
+        player2ScoreText.GameObject().SetActive(true);
         TimerText.GameObject().SetActive(true);
         multiplayerPlayer.sensitivity = 2f;
         bow.SetActive(true);

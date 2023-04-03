@@ -15,9 +15,15 @@ public class ArrowMP : NetworkBehaviour
     public AudioSource HitSound;
     public AudioSource EnemySound;
 
-    private bool isActivate = true;
-
+    bool isActivate = true;
     Vector3 mouseWorldPosition = Vector3.zero;
+
+    private RatingMP scoringSystem;
+
+    private void Start()
+    {
+        scoringSystem = FindObjectOfType<RatingMP>();
+    }
 
     private void Awake()
     {
@@ -26,25 +32,27 @@ public class ArrowMP : NetworkBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //if (!isLocalPlayer) { return; }
+        int playerConnectionId = GameObject.FindGameObjectWithTag("Player").GetComponent<NetworkIdentity>().connectionToClient.connectionId;
         if (!isActivate) return;
         if (collision.gameObject.tag == "Target")
         {
+            Debug.Log("Collision");
             HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
             HitSound.Play(); 
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
-            arrowRigidbody.transform.position = new(0, 0, 0);
-            RatingMP.score += 100;
-
+            Destroy(gameObject);
+            scoringSystem.IncrementPlayerScore(100, playerConnectionId);
         }
         if (collision.gameObject.tag == "Enemy")
         {
             HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
             EnemySound.Play();
-            Destroy(collision.gameObject);
+            NetworkServer.Destroy(collision.gameObject);
             TrailRenderer.enabled = false;
-            arrowRigidbody.transform.position = new(0, 0, 0);
-            RatingMP.score += 500;
+            Destroy(gameObject);
+            scoringSystem.IncrementPlayerScore(500, playerConnectionId);
         }
         if (collision.gameObject.tag == "Environment")
         {
@@ -56,6 +64,8 @@ public class ArrowMP : NetworkBehaviour
         BowRopeMP.fly = false;
         isActivate = false;
     }
+    
+
     public void SetToRope(Transform ropeTransform)
     {
         isActivate = true;

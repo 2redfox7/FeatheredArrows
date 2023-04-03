@@ -11,7 +11,7 @@ public class targetAppearanceMP : NetworkBehaviour
     private GameObject[] otherTargets;
     private GameObject currentTarget;
 
-    [SyncVar] private int targetIndex = 0;
+    private int targetIndex = 0;
     private int currentIndex = 0;
     
     public static bool targetActivation;
@@ -56,7 +56,7 @@ public class targetAppearanceMP : NetworkBehaviour
 
                     targetIndexGenerator(otherTargets);   
 
-                    CmdTargetIndexGenerator(otherTargets);
+                    //CmdTargetIndexGenerator(otherTargets);
 
                 targetActivation = true;
             }
@@ -77,16 +77,17 @@ public class targetAppearanceMP : NetworkBehaviour
         }
 
     }
-    [Server]
-    public void targetIndexGenerator(GameObject[] targetsPool)
+    //[Server]
+    public int targetIndexGenerator(GameObject[] targetsPool)
     {
         targetIndex = Random.Range(0, targetsPool.Length);
+        return targetIndex;
     }
-    [Command] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
-    public void CmdTargetIndexGenerator(GameObject[] targetsPool)
-    {
-        targetIndexGenerator(targetsPool);
-    }
+    //[Command] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
+    //public void CmdTargetIndexGenerator(GameObject[] targetsPool)
+    //{
+    //    targetIndexGenerator(targetsPool);
+    //}
     private GameObject[] RemoveAt(GameObject[] array, int index)
     {
         GameObject[] newArray = new GameObject[array.Length - 1];
