@@ -14,6 +14,7 @@ public class ArrowMP : NetworkBehaviour
 
     public AudioSource HitSound;
     public AudioSource EnemySound;
+    int playerConnectionId;
 
     bool isActivate = true;
     Vector3 mouseWorldPosition = Vector3.zero;
@@ -32,8 +33,8 @@ public class ArrowMP : NetworkBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //if (!isLocalPlayer) { return; }
-        int playerConnectionId = GameObject.FindGameObjectWithTag("Player").GetComponent<NetworkIdentity>().connectionToClient.connectionId;
+        NetworkIdentity localPlayer = NetworkClient.localPlayer;
+        Debug.Log(localPlayer.connectionToServer.connectionId);
         if (!isActivate) return;
         if (collision.gameObject.tag == "Target")
         {
@@ -43,7 +44,11 @@ public class ArrowMP : NetworkBehaviour
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
             Destroy(gameObject);
-            scoringSystem.IncrementPlayerScore(100, playerConnectionId);
+            if (!isLocalPlayer)
+            {
+                scoringSystem.IncrementPlayerScore(100, localPlayer.connectionToServer.connectionId);
+            }
+            else scoringSystem.CmdIncrementPlayerScore(100, localPlayer.connectionToServer.connectionId);
         }
         if (collision.gameObject.tag == "Enemy")
         {
@@ -52,7 +57,7 @@ public class ArrowMP : NetworkBehaviour
             NetworkServer.Destroy(collision.gameObject);
             TrailRenderer.enabled = false;
             Destroy(gameObject);
-            scoringSystem.IncrementPlayerScore(500, playerConnectionId);
+            scoringSystem.CmdIncrementPlayerScore(500, playerConnectionId);
         }
         if (collision.gameObject.tag == "Environment")
         {
