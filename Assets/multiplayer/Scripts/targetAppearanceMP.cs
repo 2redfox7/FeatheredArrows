@@ -11,7 +11,7 @@ public class targetAppearanceMP : NetworkBehaviour
     private GameObject[] otherTargets;
     private GameObject currentTarget;
 
-    private int targetIndex = 0;
+    [SyncVar(hook = nameof(TargetChanged))] private int targetIndex = 0;
     private int currentIndex = 0;
     
     public static bool targetActivation;
@@ -30,9 +30,13 @@ public class targetAppearanceMP : NetworkBehaviour
     {
         otherTargets = targetsPool;
         currentTarget = targetsPool[targetIndex];
-        targetIndexGenerator(otherTargets);
+        if (isServer)
+        {
+            targetIndexGenerator(otherTargets);
+        }
         currentTarget.SetActive(true);
         targetActivation = true;
+        Debug.Log(targetIndex);
         currentIndex = targetIndex;
     }
 
@@ -51,15 +55,21 @@ public class targetAppearanceMP : NetworkBehaviour
         if (!targetActivation || !currentTarget.activeInHierarchy)
         {
 
-            while (targetIndex == currentIndex)
-            {
-
-                    targetIndexGenerator(otherTargets);   
-
-                    //CmdTargetIndexGenerator(otherTargets);
+            //while (targetIndex == currentIndex)
+            //{
+                if (isServer)
+                {
+                    Debug.Log("СЕРВЕР");
+                    targetIndexGenerator(otherTargets);
+                }
+                else
+                {
+                    Debug.Log("КЛИЕНТ");
+                    CmdTargetIndexGenerator(otherTargets);
+                }  
 
                 targetActivation = true;
-            }
+            //}
             currentIndex = targetIndex;
         }
 
@@ -77,17 +87,24 @@ public class targetAppearanceMP : NetworkBehaviour
         }
 
     }
-    //[Server]
     public int targetIndexGenerator(GameObject[] targetsPool)
     {
+        Debug.Log("ПУПУ");
         targetIndex = Random.Range(0, targetsPool.Length);
         return targetIndex;
     }
-    //[Command] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
-    //public void CmdTargetIndexGenerator(GameObject[] targetsPool)
-    //{
-    //    targetIndexGenerator(targetsPool);
-    //}
+    [Command(requiresAuthority = false)] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
+    public void CmdTargetIndexGenerator(GameObject[] targetsPool)
+    {
+        Debug.Log("ПИПИ");
+        targetIndexGenerator(targetsPool);
+    }
+    private void TargetChanged(int oldValue, int newValue)
+    {
+        Debug.Log($"Старое значение:{oldValue}");
+        Debug.Log($"Новое значение:{newValue}");
+        targetIndex = newValue;
+    }
     private GameObject[] RemoveAt(GameObject[] array, int index)
     {
         GameObject[] newArray = new GameObject[array.Length - 1];

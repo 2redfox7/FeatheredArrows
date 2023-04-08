@@ -1,8 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 using Mirror;
+
+
 public class ArrowMP : NetworkBehaviour
 {
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
@@ -15,7 +15,7 @@ public class ArrowMP : NetworkBehaviour
     public AudioSource HitSound;
     public AudioSource EnemySound;
     int playerConnectionId;
-
+    [SyncVar] int localPlayer;
     bool isActivate = true;
     Vector3 mouseWorldPosition = Vector3.zero;
 
@@ -31,24 +31,24 @@ public class ArrowMP : NetworkBehaviour
         arrowRigidbody = GetComponent<Rigidbody>();
     }
 
+
     private void OnCollisionEnter(Collision collision)
     {
-        NetworkIdentity localPlayer = NetworkClient.localPlayer;
-        Debug.Log(localPlayer.connectionToServer.connectionId);
+        
         if (!isActivate) return;
         if (collision.gameObject.tag == "Target")
         {
             Debug.Log("Collision");
             HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
-            HitSound.Play(); 
+            HitSound.Play();
             collision.gameObject.SetActive(false);
             TrailRenderer.enabled = false;
             Destroy(gameObject);
-            if (!isLocalPlayer)
+            if (isServer)
             {
-                scoringSystem.IncrementPlayerScore(100, localPlayer.connectionToServer.connectionId);
+                scoringSystem.IncrementPlayerScore(100, 0);
             }
-            else scoringSystem.CmdIncrementPlayerScore(100, localPlayer.connectionToServer.connectionId);
+            else scoringSystem.CmdIncrementPlayerScore(100, 1);
         }
         if (collision.gameObject.tag == "Enemy")
         {
@@ -69,7 +69,6 @@ public class ArrowMP : NetworkBehaviour
         BowRopeMP.fly = false;
         isActivate = false;
     }
-    
 
     public void SetToRope(Transform ropeTransform)
     {

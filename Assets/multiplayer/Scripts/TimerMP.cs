@@ -5,13 +5,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Mirror;
+using System;
 
 public class TimerMP : NetworkBehaviour
 {
     [SerializeField] TextMeshProUGUI TimerText;
     [SerializeField] TextMeshProUGUI player1ScoreText;
     [SerializeField] TextMeshProUGUI player2ScoreText;
+    [SerializeField] TextMeshProUGUI player1ScoreResultText;
+    [SerializeField] TextMeshProUGUI player2ScoreResultText;
     [SerializeField] TextMeshProUGUI StartTimerText;
+    [SerializeField] TextMeshProUGUI waitingPlayers;
+    [SerializeField] TextMeshProUGUI winOrLose;
 
     public AudioSource LetsGo;
 
@@ -21,12 +26,27 @@ public class TimerMP : NetworkBehaviour
     public GameObject resultMenuUI;
     public GameObject bow;
 
-    public static float timeLeft = 30;
-    public static float timeStart = 3;
+    public float timeLeft = 30;
+    public float timeStart = 3;
+
+    private RatingMP scoringSystem;
+
+    private void Start()
+    {
+        scoringSystem = FindObjectOfType<RatingMP>();
+    }
     void Update()
     {
+        scoringSystem.FindPlayersByTag();
+        if (scoringSystem.playersArray.Length < 2)
+        {
+            multiplayerPlayer.sensitivity = 0f;
+            return;
+        }
         if (GameIsStart)
         {
+            waitingPlayers.GameObject().SetActive(false);
+            StartTimerText.GameObject().SetActive(true);
             bow.SetActive(false);
             multiplayerPlayer.sensitivity = 0f;
             StartTimerText.text = "" + Mathf.Round(timeStart).ToString();
@@ -40,14 +60,21 @@ public class TimerMP : NetworkBehaviour
         {
             TimerText.text = "" + Mathf.Round(timeLeft).ToString();
             timeLeft -= Time.deltaTime;
-            if (Mathf.Round(timeLeft) == 0)
+            if (Mathf.Round(timeLeft) <= 0)
             {
-                TryResult();
+                if (isServer)
+                {
+                    TryResultServer();
+                }
+                else
+                {
+                    TryResultClient();
+                }
             }
         }
     }
 
-    void TryResult()
+    void TryResultServer()
     {
         Cursor.lockState = CursorLockMode.None;
         TimerText.GameObject().SetActive(false);
@@ -55,21 +82,53 @@ public class TimerMP : NetworkBehaviour
         player2ScoreText.GameObject().SetActive(false);
         resultMenuUI.SetActive(true);
         GameIsEnd = true;
-        Time.timeScale = 0f;
         bow.SetActive(false);
         multiplayerPlayer.sensitivity = 0f;
-    }
 
-    void StartGame()
-    {
-        if (SceneManager.GetActiveScene().name == "hardLevel")
+        winOrLose.GameObject().SetActive(true);
+
+        if (Convert.ToInt32(player1ScoreResultText.text) < Convert.ToInt32(player2ScoreResultText.text))
         {
-            timeLeft = 60;
+            winOrLose.text = "Вы проиграли :(";
+        }
+        else if (Convert.ToInt32(player1ScoreResultText.text) > Convert.ToInt32(player2ScoreResultText.text))
+        {
+            winOrLose.text = "Вы выиграли :)";
         }
         else
         {
-            timeLeft = 30;
+            winOrLose.text = "Ничья :o";
         }
+    }
+    void TryResultClient()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        TimerText.GameObject().SetActive(false);
+        player1ScoreText.GameObject().SetActive(false);
+        player2ScoreText.GameObject().SetActive(false);
+        resultMenuUI.SetActive(true);
+        GameIsEnd = true;
+        bow.SetActive(false);
+        multiplayerPlayer.sensitivity = 0f;
+
+        winOrLose.GameObject().SetActive(true);
+
+        if (Convert.ToInt32(player1ScoreResultText.text) < Convert.ToInt32(player2ScoreResultText.text))
+        {
+            winOrLose.text = "Вы выиграли :)";
+        }
+        else if (Convert.ToInt32(player1ScoreResultText.text) > Convert.ToInt32(player2ScoreResultText.text))
+        {
+            winOrLose.text = "Вы проиграли :(";
+        }
+        else
+        {
+            winOrLose.text = "Ничья :o";
+        }
+    }
+    void StartGame()
+    {
+        timeLeft = 30;
         StartTimerText.GameObject().SetActive(false);
         player1ScoreText.GameObject().SetActive(true);
         player2ScoreText.GameObject().SetActive(true);

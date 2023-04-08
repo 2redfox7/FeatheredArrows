@@ -52,7 +52,6 @@ public class PauseMP : NetworkBehaviour
     }
     public void LoadMenu()
     {
-        TimerMP.timeStart = 3;
         TimerMP.GameIsStart = true;
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
@@ -63,7 +62,6 @@ public class PauseMP : NetworkBehaviour
 
     public void LoadMenuInResult()
     {
-        TimerMP.timeStart = 3;
         TimerMP.GameIsStart = true;
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
@@ -73,7 +71,6 @@ public class PauseMP : NetworkBehaviour
 
     public void Restart()
     {
-        TimerMP.timeStart = 3;
         TimerMP.GameIsStart = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Cursor.lockState = CursorLockMode.Locked;
