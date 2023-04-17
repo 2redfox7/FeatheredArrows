@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
         if (GameIsStart)
         {
             bow.SetActive(false);
-            Player.sensitivity = 0f;
+            multiplayerPlayer.sensitivity = 0f;
             StartTimerText.text = "" + Mathf.Round(timeStart).ToString();
             timeStart -= Time.deltaTime;
             if (Mathf.Round(timeStart) == 0)
@@ -54,7 +54,7 @@ public class Timer : MonoBehaviour
         GameIsEnd = true;
         Time.timeScale = 0f;
         bow.SetActive(false);
-        Player.sensitivity = 0f;
+        multiplayerPlayer.sensitivity = 0f;
     }
 
     void StartGame()
@@ -70,7 +70,7 @@ public class Timer : MonoBehaviour
         StartTimerText.GameObject().SetActive(false);
         ScoreText.GameObject().SetActive(true);
         TimerText.GameObject().SetActive(true);
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         bow.SetActive(true);
         LetsGo.Play();
         GameIsStart = false;

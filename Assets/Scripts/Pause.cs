@@ -32,7 +32,7 @@ public class Pause : MonoBehaviour
         pauseMenuUI.SetActive(false);
         bow.SetActive(true);
         Time.timeScale = 1.0f;
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         GameIsPaused = false;
     }
 
@@ -43,7 +43,7 @@ public class Pause : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         bow.SetActive(false);
-        Player.sensitivity = 0f;
+        multiplayerPlayer.sensitivity = 0f;
         GameIsPaused = true;
     }
     public void LoadMenu()
@@ -52,7 +52,7 @@ public class Pause : MonoBehaviour
         Timer.GameIsStart = true;
         Rating.score = 0;
         GameIsPaused = false;
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }
@@ -62,7 +62,7 @@ public class Pause : MonoBehaviour
         Timer.timeStart = 3;
         Timer.GameIsStart = true;
         Rating.score = 0;
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         Time.timeScale = 1.0f;
         SceneManager.LoadScene("MainMenu");
     }

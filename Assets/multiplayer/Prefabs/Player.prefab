@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 3599713880301016025}
   - component: {fileID: -1098201309075754900}
   - component: {fileID: 519615058243240881}
+  - component: {fileID: 6426360571543843675}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -268,6 +269,7 @@ MonoBehaviour:
     m_Bits: 1
   debugTransform: {fileID: 2123855414093723907, guid: e8dc3aa7bb92d0d4d8da3c2596305341, type: 3}
   playerCamera: {fileID: 3599713879505653740}
+  matchID: 
 --- !u!114 &3599713880301016024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +458,21 @@ MonoBehaviour:
   CurrentArrow: {fileID: 2601135934249680071, guid: 0f5d7dcba5f6ba142a0ef2e8a72e8c15, type: 3}
   BowTension: {fileID: 5249242669647037939}
   ArrowWhistling: {fileID: 5058561494684059847}
+--- !u!114 &6426360571543843675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3599713880301015975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d17e718851449a6879986e45c458fb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0.1
 --- !u!1001 &4361331189219430354
 PrefabInstance:
   m_ObjectHideFlags: 0

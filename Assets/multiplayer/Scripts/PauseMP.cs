@@ -37,7 +37,7 @@ public class PauseMP : NetworkBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenuUI.SetActive(false);
         bow.SetActive(true);
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         GameIsPaused = false;
     }
 
@@ -47,7 +47,7 @@ public class PauseMP : NetworkBehaviour
         Cursor.lockState = CursorLockMode.None;
         pauseMenuUI.SetActive(true);
         bow.SetActive(false);
-        Player.sensitivity = 0f;
+        multiplayerPlayer.sensitivity = 0f;
         GameIsPaused = true;
     }
     public void LoadMenu()
@@ -56,7 +56,7 @@ public class PauseMP : NetworkBehaviour
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
         GameIsPaused = false;
-        Player.sensitivity = 2f;;
+        multiplayerPlayer.sensitivity = 2f;;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -65,7 +65,7 @@ public class PauseMP : NetworkBehaviour
         TimerMP.GameIsStart = true;
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
-        Player.sensitivity = 2f;
+        multiplayerPlayer.sensitivity = 2f;
         SceneManager.LoadScene("MainMenu");
     }
 
