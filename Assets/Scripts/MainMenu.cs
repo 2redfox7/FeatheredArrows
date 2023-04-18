@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
     }
     public void MultiplayerLobby()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("hardMultiplayerLevel");
     }
 
     public void ExitGame()
