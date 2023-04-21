@@ -61,14 +61,16 @@ jobs:
 #        with:
 #          name: Coverage results
 #          path: ${{ steps.testRunner.outputs.coveragePath }}
-      - name: Code Coverage
+      - name: Run tests and generate Coverage XML report
         uses: game-ci/unity-test-runner@v2
-        id: tests
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-           artifactsPath: code-coverage-artifacts
-           githubToken: ${{ secrets.GITHUB_TOKEN }}
-           checkName: Code Coverage Test Results
-           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageOptions generateHtmlReport;generateBadgeReport;assemblyFilters:+<assets> -coverageResultsPath code-coverage-artifacts
+	  # Replace with the Unity version your project should be tested on.
+          # Minimum version: 2019.3
+          unityVersion: 2021.3.16f1
+          testMode: playmode
+          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics
 
   buildWebGL:
     needs: testRunner
