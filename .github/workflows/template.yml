@@ -33,11 +33,9 @@ jobs:
 #          unityVersion: 2021.3.16f1
 #          testMode: playmode
 #          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics
-      - name: Upload XML report to Codecov
-        uses: codecov/codecov-action@v2
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
         with:
-          name: PlayMode
-          flags: automated
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./TestCoverageResults_0000.xml
 
