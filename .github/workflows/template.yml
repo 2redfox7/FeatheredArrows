@@ -65,7 +65,7 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           name: Coverage results
-          path: ${{ steps.testRunner.outputs.coveragePath }}
+          directory: ${{ steps.testRunner.outputs.coveragePath }}
 
   buildWebGL:
     needs: testRunner
