@@ -61,6 +61,8 @@ jobs:
         with:
           name: Coverage results
           path: ${{ steps.testRunner.outputs.coveragePath }}
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
 
   buildWebGL:
     needs: testRunner
