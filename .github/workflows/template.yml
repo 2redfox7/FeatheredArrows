@@ -61,11 +61,14 @@ jobs:
 #        with:
 #          name: Coverage results
 #          path: ${{ steps.testRunner.outputs.coveragePath }}
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+      - name: Code Coverage
+        uses: game-ci/unity-test-runner@v2
+        id: tests
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./coverage.xml
+           artifactsPath: code-coverage-artifacts
+           githubToken: ${{ secrets.GITHUB_TOKEN }}
+           checkName: Code Coverage Test Results
+           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageOptions generateHtmlReport;generateBadgeReport;assemblyFilters:+<assets> -coverageResultsPath code-coverage-artifacts
 
   buildWebGL:
     needs: testRunner
