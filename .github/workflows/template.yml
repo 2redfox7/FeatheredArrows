@@ -1,56 +1,23 @@
 name: GameCI Template 🎮
 
-on: 
-  # Replace with your main branch if needed
-  push:
-    branches:
-      - main
-  pull_request: 
-    branches:
-      - main
+on: push
+
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
 
 jobs:
-
-  runTests:
-
-    name: Run Tests
+  checkLicense:
+    name: Check for the Unity license ☑️
     runs-on: ubuntu-latest
-
     steps:
+      - name: Fail - No license ☠️
+        if: ${{ !startsWith(env.UNITY_LICENSE, '<') }}
+        run: exit 1
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          lfs: true
-
-      - name: Cache Library
-        uses: actions/cache@v2
-        with:
-          path: Library
-          key: Library
-
-      - name: Run tests and generate Coverage XML report
-        uses: game-ci/unity-test-runner@v2
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-        with:
-          unityVersion: 2021.3.16f1
-          testMode: playmode
-          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics
-      - name: Upload XML report to Codecov
-        uses: codecov/codecov-action@v2
-        with:
-          name: PlayMode
-          flags: automated
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: coverage-results/**/*.xml
-
-  buildWebGL:
-    needs: runTests
-    name: Build for WebGL 🖥️
+  testRunner:
+    needs: checkLicense
+    name: Test all modes 📝
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -75,11 +42,54 @@ jobs:
         uses: actions/cache@v2
         with:
           path: Library
+          key: Library-test-project
+          restore-keys: |
+            Library-test-project-
+            Library-
+
+      - uses: webbertakken/unity-test-runner@v2
+        id: testRunner
+        with:
+          testMode: all
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Test results (all modes)
+          path: ${{ steps.testRunner.outputs.artifactsPath }}
+
+  buildWebGL:
+    needs: testRunner
+    name: Build for WebGL 🖥️
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create LFS file list
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+
+      - name: Restore LFS cache
+        uses: actions/cache@v2
+        id: lfs-cache
+        with:
+          path: .git/lfs
+          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+
+      - name: Git LFS Pull
+        run: |
+          git lfs pull
+          git add .
+          git reset --hard
+      - name: Restore Library cache
+        uses: actions/cache@v2
+        with:
+          path: Library
           key: Library-build-WebGL
           restore-keys: |
             Library-build-
             Library-
-
       - uses: webbertakken/unity-builder@v2
         with:
           targetPlatform: WebGL
@@ -90,7 +100,7 @@ jobs:
           path: build/WebGL
 
   buildWindows:
-    needs: runTests
+    needs: testRunner
     name: Build for Windows 🖥️
     runs-on: ubuntu-latest
     strategy:
