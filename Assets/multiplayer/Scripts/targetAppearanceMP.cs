@@ -89,20 +89,16 @@ public class targetAppearanceMP : NetworkBehaviour
     }
     public int targetIndexGenerator(GameObject[] targetsPool)
     {
-        Debug.Log("ПУПУ");
         targetIndex = Random.Range(0, targetsPool.Length);
         return targetIndex;
     }
     [Command(requiresAuthority = false)] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
     public void CmdTargetIndexGenerator(GameObject[] targetsPool)
     {
-        Debug.Log("ПИПИ");
         targetIndexGenerator(targetsPool);
     }
     private void TargetChanged(int oldValue, int newValue)
     {
-        Debug.Log($"Старое значение:{oldValue}");
-        Debug.Log($"Новое значение:{newValue}");
         targetIndex = newValue;
     }
     private GameObject[] RemoveAt(GameObject[] array, int index)

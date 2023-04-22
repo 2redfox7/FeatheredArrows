@@ -5,7 +5,7 @@ using TMPro;
 public class ConnectionMenu : MonoBehaviour
 {
 
-    NetworkManager manager;
+    public NetworkManager manager;
     public TMP_InputField ip_InputField;
     public GameObject HostConnect_go;
     void Awake()
@@ -20,16 +20,8 @@ public class ConnectionMenu : MonoBehaviour
 
     public void ConnectFunction()
     {
-        if (!NetworkClient.active)
-        {
-            manager.networkAddress = ip_InputField.text;
-            manager.StartClient();
-            HostConnect_go.SetActive(false);
-        }
-        else
-        {
-            manager.StopClient();
-        }
+        manager.networkAddress = ip_InputField.text;
+        manager.StartClient();
+        HostConnect_go.SetActive(false);
     }
-
 }

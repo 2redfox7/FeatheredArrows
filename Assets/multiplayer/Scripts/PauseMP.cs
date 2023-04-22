@@ -15,9 +15,12 @@ public class PauseMP : NetworkBehaviour
     public AudioSource BackgroundMusic;
     private RatingMP scoringSystem;
 
+    private ConnectionMenu menu;
+
     private void Start()
     {
         scoringSystem = FindObjectOfType<RatingMP>();
+        menu = FindObjectOfType<ConnectionMenu>();
     }
 
     void Update()
@@ -56,8 +59,17 @@ public class PauseMP : NetworkBehaviour
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
         GameIsPaused = false;
-        multiplayerPlayer.sensitivity = 2f;;
+        multiplayerPlayer.sensitivity = 2f;
+        if (isServer)
+        {
+            menu.manager.StopHost();
+        }
+        else
+        {
+            menu.manager.StopClient();
+        }
         SceneManager.LoadScene("MainMenu");
+
     }
 
     public void LoadMenuInResult()
@@ -66,8 +78,17 @@ public class PauseMP : NetworkBehaviour
         scoringSystem.player1Score = 0;
         scoringSystem.player2Score = 0;
         multiplayerPlayer.sensitivity = 2f;
+        if (menu.manager.mode == NetworkManagerMode.Host)
+        {
+            menu.manager.StopHost();
+        }
+        if (menu.manager.mode == NetworkManagerMode.ClientOnly)
+        {
+            menu.manager.StopClient();
+        }
         SceneManager.LoadScene("MainMenu");
     }
+
 
     public void Restart()
     {
