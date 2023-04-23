@@ -52,12 +52,16 @@ public class ArrowMP : NetworkBehaviour
         }
         if (collision.gameObject.tag == "Enemy")
         {
-            HitSound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
+            EnemySound.pitch = UnityEngine.Random.Range(0.95f, 1.1f);
             EnemySound.Play();
-            NetworkServer.Destroy(collision.gameObject);
+            Destroy(collision.gameObject);
             TrailRenderer.enabled = false;
             Destroy(gameObject);
-            scoringSystem.CmdIncrementPlayerScore(500, playerConnectionId);
+            if (isServer)
+            {
+                scoringSystem.IncrementPlayerScore(500, 0);
+            }
+            else scoringSystem.CmdIncrementPlayerScore(500, 1);
         }
         if (collision.gameObject.tag == "Environment")
         {

@@ -11,7 +11,7 @@ public class EnemyMP : NetworkBehaviour
     public GameObject eagle;
     private GameObject currentSpawner;
     private GameObject currentEagle;
-    private int spawnerIndex = 0;
+    [SyncVar(hook = nameof(SpawnerChanged))] private int spawnerIndex = 0;
     private int currentIndex = 0;
 
     private bool outlineActivation = true;
@@ -19,6 +19,8 @@ public class EnemyMP : NetworkBehaviour
     private bool spawnerActivation;
     public float flyingSpeed;
     private bool isFlying;
+
+    private RatingMP scoringSystem;
 
     private void Awake()
     {
@@ -34,9 +36,13 @@ public class EnemyMP : NetworkBehaviour
     }
     private void Start()
     {
+        scoringSystem = FindObjectOfType<RatingMP>();
         otherSpawners = eagleSpawners;
-        targetIndexGenerator(eagleSpawners);
         currentSpawner = eagleSpawners[spawnerIndex];
+        if (isServer)
+        {
+            targetIndexGenerator(eagleSpawners);
+        }
         currentSpawner.SetActive(true);
         spawnerActivation = true;
         isFlying = false;
@@ -44,7 +50,10 @@ public class EnemyMP : NetworkBehaviour
     }
     private void Update()
     {
-        if (!isServer) return;
+        if (scoringSystem.playersArray.Length < 2)
+        {
+            return;
+        }
         time += Time.deltaTime;
         if (PauseMP.GameIsPaused && currentEagle)
         {
@@ -82,7 +91,6 @@ public class EnemyMP : NetworkBehaviour
                 currentSpawner.SetActive(true);
                 currentEagle = Instantiate(eagle, currentSpawner.transform.position, currentSpawner.transform.rotation);
                 //NetworkServer.Spawn(currentEagle.gameObject);
-                Debug.Log("Кэфтеме!");
             }
             
             if (currentSpawner)
@@ -95,7 +103,7 @@ public class EnemyMP : NetworkBehaviour
             {
                 disactivatedSpawner.SetActive(false);
             }
-            if (Mathf.Round(time) % 12 == 0 && Mathf.Round(time) >= 7)
+            if (Mathf.Round(time) % 20 == 0)
             {
                 spawnerActivation = false;
                 currentSpawner.SetActive(false);
@@ -106,15 +114,19 @@ public class EnemyMP : NetworkBehaviour
             }
         }
     }
-    private int targetIndexGenerator(GameObject[] eagleSpawners)
+    public int targetIndexGenerator(GameObject[] eagleSpawners)
     {
         spawnerIndex = Random.Range(0, eagleSpawners.Length);
         return spawnerIndex;
     }
-    [Command(requiresAuthority = false)] //обозначаем, что этот метод должен будет выполняться на сервере по запросу клиента
+    [Command(requiresAuthority = false)] 
     public void CmdTargetIndexGenerator(GameObject[] eagleSpawners)
     {
         targetIndexGenerator(eagleSpawners);
+    }
+    private void SpawnerChanged(int oldValue, int newValue)
+    {
+        spawnerIndex = newValue;
     }
     private GameObject[] RemoveAt(GameObject[] array, int index)
     {
