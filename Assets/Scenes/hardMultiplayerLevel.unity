@@ -3430,7 +3430,7 @@ MonoBehaviour:
   - {fileID: 172793256}
   - {fileID: 842939456}
   - {fileID: 399364461}
-  eagle: {fileID: 315098139573314136, guid: 77689c41e098d7c44ad2d662979f02b6, type: 3}
+  eagle: {fileID: 1879581886640764, guid: 8a98dc7c3255b1f43b1885fecabf80f2, type: 3}
   flyingSpeed: 5
 --- !u!114 &482804729
 MonoBehaviour:
